@@ -1,0 +1,43 @@
+PATH
+  remote: .
+  specs:
+    instavin (0.0.1)
+      httparty
+      symboltable
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.3.5)
+    crack (0.4.1)
+      safe_yaml (~> 0.9.0)
+    excon (0.25.3)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
+    metaclass (0.0.1)
+    minitest (5.0.6)
+    mocha (0.14.0)
+      metaclass (~> 0.0.1)
+    multi_json (1.7.9)
+    multi_xml (0.5.5)
+    rake (10.1.0)
+    safe_yaml (0.9.5)
+    symboltable (1.0.2)
+    vcr (2.5.0)
+    webmock (1.11.0)
+      addressable (>= 2.2.7)
+      crack (>= 0.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.3)
+  excon
+  instavin!
+  minitest
+  mocha
+  rake
+  vcr
+  webmock (= 1.11)

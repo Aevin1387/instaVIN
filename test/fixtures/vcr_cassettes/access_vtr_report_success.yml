@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://access_token:api_key@www.instavin.com/api/v2/json/order/VTR
+    body:
+      encoding: UTF-8
+      string: vin=1D7HW22K45S177616
+    headers: {}
+  response:
+    status:
+      code: 401
+      message: UNAUTHORIZED
+    headers:
+      Date:
+      - Tue, 13 Aug 2013 20:53:48 GMT
+      Server:
+      - Apache/2.2.3 (Red Hat)
+      X-Powered-By:
+      - PHP/5.2.17
+      Set-Cookie:
+      - PHPSESSID=jfhhuq1od3qkjoe06a292tk574; path=/; domain=www.instavin.com
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Connection:
+      - close
+      X-Original-Transfer-Encoding:
+      - chunked
+      Content-Length:
+      - '83'
+      Access-Control-Allow-Origin:
+      - http://myvinreport.com
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: "{\"status_code\": 401, \"_type\": \"error\", \"error_message\": \"Invalid
+        authentication\"}\r\n"
+    http_version: 
+  recorded_at: Tue, 13 Aug 2013 20:53:48 GMT
+recorded_with: VCR 2.5.0
